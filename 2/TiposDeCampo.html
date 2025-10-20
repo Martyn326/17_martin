@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tipos de campo</title>
+        
+    
+    </head>
+    <body>
+        <h2>Formulario basico</h2>
+    
+        <form action="procesar.php" method="post">
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+        <br>
+        <br>
+        <label>Edad:</label>
+        <input type="number" name="edad"/>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <hr>
+
+    </form>
+        <h2>Tipos de campos formulario</h2>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" name="texto"/>
+            <br>
+            <br>
+            <label>Contraseña:</label>
+            <input type="password" name="clave"/>
+            <br>
+            <br>
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <br>
+            <br>
+            <label>Fecha:</label>
+            <input type="datetime-local" name="Fecha"/>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <hr>
+            <h2>Botones de opciones  y casillas </h2>
+            <form action="mailto:martin,miailov@educa.madrid.org" method="post">
+            <input type="radio" name="color" value="amarillo" /> amarillo
+            <br>
+            <input type="radio" name="color" value="verde" /> verde
+            <br>
+            <input type="radio" name="color" value="rojo" /> rojo
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            
+        
+
+        </form>
+    </body>
+</html>
