@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Tipos de campo</title>
-        
-    
-    </head>
-    <body>
-        <h2>Formulario basico</h2>
-    
-        <form action="procesar.php" method="post">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tipos de campo</title>
+
+
+</head>
+
+<body>
+    <h2>Formulario basico</h2>
+
+    <form action="procesar.php" method="post">
         <label>Nombre:</label>
         <input type="text" name="nombre">
         <br>
         <br>
         <label>Edad:</label>
-        <input type="number" name="edad"/>
+        <input type="number" name="edad" />
         <br>
         <br>
         <input type="submit" value="Enviar">
         <hr>
 
     </form>
-        <h2>Tipos de campos formulario</h2>
-        <form>
-            <label>Nombre:</label>
-            <input type="text" name="texto"/>
-            <br>
-            <br>
-            <label>Contraseña:</label>
-            <input type="password" name="clave"/>
-            <br>
-            <br>
-            <label>Email:</label>
-            <input type="email" name="email" />
-            <br>
-            <br>
-            <label>Fecha:</label>
-            <input type="datetime-local" name="Fecha"/>
-            <br>
-            <br>
-            <input type="submit" value="Enviar">
-            <hr>
-            <h2>Botones de opciones  y casillas </h2>
-            <form action="mailto:martin,miailov@educa.madrid.org" method="post">
+    <h2>Tipos de campos formulario</h2>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" name="texto" />
+        <br>
+        <br>
+        <label>Contraseña:</label>
+        <input type="password" name="clave" />
+        <br>
+        <br>
+        <label>Email:</label>
+        <input type="email" name="email" />
+        <br>
+        <br>
+        <label>Fecha:</label>
+        <input type="datetime-local" name="Fecha" />
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <hr>
+        <h2>Botones de opciones y casillas </h2>
+        <form action="mailto:martin,miailov@educa.madrid.org" method="post">
             <input type="radio" name="color" value="amarillo" /> amarillo
             <br>
             <input type="radio" name="color" value="verde" /> verde
@@ -51,10 +53,53 @@
             <input type="radio" name="color" value="rojo" /> rojo
             <br>
             <br>
+            <fieldset>
+                <legend>Aficiones</legend>
+                <input type="checkbox" name="aficion" value="gimnasio">gimnasio
+                <br>
+                <input type="checkbox" name="aficion" value="dormir">dormir
+                <br>
+                <input type="checkbox" name="aficion" value="series">series
+                <br>
+            </fieldset>
+            <input type="checkbox" name="aficion" value="gimnasio">gimnasio
+            <br>
+            <input type="checkbox" name="aficion" value="dormir">dormir
+            <br>
+            <input type="checkbox" name="aficion" value="series">series
+            <br>
+            <br>
+            <hr>
+            <h2>Listas y grupos</h2>
+            <form>
+                <select name="fruta" id="fruta">
+                    <option value="">-------</option>
+                    <optgroup label="Temporada">
+                        <option value="platano">platano</option>
+                        <option value="manzana">manzana</option>
+                        <option value="fresa">fresa</option>
+                    </optgroup>
+                    <optgroup label="Tropical">
+                        <option value="piña">piña</option>
+                        <option value="mango">mango</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br><br>
+                <label>Fruta datalist</label>
+                <input list="fruta_lista" name="frutas" placeholder="Elegir"> 
+                <datalist id="fruta_lista">
+                    <option value="piña">piña</option>
+                    <option value="mango">mango</option>
+                    <option value="platano">platano</option>
+                    <option value="manzana">manzana</option>
+                    <option value="fresa">fresa</option>
+                </datalist>
+                <input type="submit" value="Enviar">
+            </form>
+            <br>
             <input type="submit" value="Enviar">
-            
-        
-
         </form>
-    </body>
+</body>
+
 </html>
