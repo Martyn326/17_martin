@@ -4,6 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>Superheroes</title>
+    <style>
+        #env {
+            background-color: blueviolet;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+    <style>
+        #res {
+            background-color: orangered;
+            border-radius: 10px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -61,9 +75,31 @@
     <br>
     <input type="checkbox"> Seguridad informatica
     <br>
+    <br>
+    <input class="styled" type="button" value="Add to favorites" />
 </fieldset>
 <br>
-<input type="submit" value="Enviar"> <input type="submit" value="Resetear">
+<fieldset>
+    <legend>Que tanto te gusta la asignatura seleccionada?</legend>
+    <input type="range" name="range" min="0" max="25" />
+
+</fieldset>
+<br>
+<fieldset>
+    <form>
+        <label for="url">Busca la mejor web de la asignatura seleccionada</label>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+            required />
+    </form>
+</fieldset>
+<br>
+<input type="week" name="week" id="camp-week" min="2025-W18" max="2026-W26" required />
+<br>
+<input type="image" id="image" alt="imagen" src="../assets/img/18.jpg" />
+<br>
+<br>
+<input type="submit" id="env" value="Enviar">
+<input type="reset" id="res" value="Resetear">
 
 </body>
 
