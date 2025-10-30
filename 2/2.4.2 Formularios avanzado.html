@@ -22,84 +22,84 @@
 
 <body>
 
-<fieldset>
-    <legend>Personaje</legend>
-    <label>Superheroes favoritos</label>
-    <input list="Superheroes" name="frutas" placeholder="Elige Superheroes">
-    <datalist id="Superheroes">
-        <option value="Superman">Superman</option>
-        <option value="Spiderman">Spiderman</option>
-        <option value="Ironman">Ironman</option>
-        <option value="Capitan America">Capitan America</option>
-        <option value="Hulk">Hulk</option>
-    </datalist>
+    <fieldset>
+        <legend>Personaje</legend>
+        <label>Superheroes favoritos</label>
+        <input list="Superheroes" name="frutas" placeholder="Elige Superheroes">
+        <datalist id="Superheroes">
+            <option value="Superman">Superman</option>
+            <option value="Spiderman">Spiderman</option>
+            <option value="Ironman">Ironman</option>
+            <option value="Capitan America">Capitan America</option>
+            <option value="Hulk">Hulk</option>
+        </datalist>
+        <br>
+        <br>
+        <label>Color:</label>
+        <br>
+        <input type="color" name="color">
+    </fieldset>
+    <fieldset>
+        <legend>Datos del cliente</legend>
+        <label>Nombre:</label>
+        <br>
+        <input list="Nombre y apellidos" name="Nombre y apellidos" placeholder="Nombre y apellidos">
+        <br>
+        <br>
+        <label>Telefono:</label>
+        <br>
+        <input type="text" name="texto"> Formato:999999
+        <br>
+        <br>
+        <label>Fecha:</label>
+        <br>
+        <input type="datetime-local" name="Fecha" />
+        <br>
+        <br>
+        <label>Contraseña:</label>
+        <br>
+        <input type="text" name="text">
+        <br>
+    </fieldset>
     <br>
+    <fieldset>
+        <legend>Selecciona forma de contacto preferida:</legend>
+        <input type="radio" name="Email" value="Email" />Email <input type="radio" name="Telefono"
+            value="Telefono" />Telefono <input type="radio" name="Carta" value="Carta" />Carta
+        <br>
+    </fieldset>
     <br>
-    <label>Color:</label>
+    <fieldset>
+        <legend>Elige tu asignatura favorita</legend>
+        <input type="checkbox"> AplicacionesWeb
+        <br>
+        <input type="checkbox"> Seguridad informatica
+        <br>
+        <br>
+        <input class="styled" type="button" value="Add to favorites" />
+    </fieldset>
     <br>
-    <input type="color" name="color">
-</fieldset>
-<fieldset>
-    <legend>Datos del cliente</legend>
-    <label>Nombre:</label>
-    <br>
-    <input list="Nombre y apellidos" name="Nombre y apellidos" placeholder="Nombre y apellidos">
-    <br>
-    <br>
-    <label>Telefono:</label>
-    <br>
-    <input type="text" name="texto"> Formato:999999
-    <br>
-    <br>
-    <label>Fecha:</label>
-    <br>
-    <input type="datetime-local" name="Fecha" />
-    <br>
-    <br>
-    <label>Contraseña:</label>
-    <br>
-    <input type="text" name="text">
-    <br>
-</fieldset>
-<br>
-<fieldset>
-    <legend>Selecciona forma de contacto preferida:</legend>
-    <input type="radio" name="Email" value="Email" />Email <input type="radio" name="Telefono"
-        value="Telefono" />Telefono <input type="radio" name="Carta" value="Carta" />Carta
-    <br>
-</fieldset>
-<br>
-<fieldset>
-    <legend>Elige tu asignatura favorita</legend>
-    <input type="checkbox"> AplicacionesWeb
-    <br>
-    <input type="checkbox"> Seguridad informatica
-    <br>
-    <br>
-    <input class="styled" type="button" value="Add to favorites" />
-</fieldset>
-<br>
-<fieldset>
-    <legend>Que tanto te gusta la asignatura seleccionada?</legend>
-    <input type="range" name="range" min="0" max="25" />
+    <fieldset>
+        <legend>Que tanto te gusta la asignatura seleccionada?</legend>
+        <input type="range" name="range" min="0" max="25" />
 
-</fieldset>
-<br>
-<fieldset>
-    <form>
-        <label for="url">Busca la mejor web de la asignatura seleccionada</label>
-        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
-            required />
-    </form>
-</fieldset>
-<br>
-<input type="week" name="week" id="camp-week" min="2025-W18" max="2026-W26" required />
-<br>
-<input type="image" id="image" alt="imagen" src="../assets/img/18.jpg" />
-<br>
-<br>
-<input type="submit" id="env" value="Enviar">
-<input type="reset" id="res" value="Resetear">
+    </fieldset>
+    <br>
+    <fieldset>
+        <form>
+            <label for="url">Busca la mejor web de la asignatura seleccionada</label>
+            <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+                required />
+        </form>
+    </fieldset>
+    <br>
+    <input type="week" name="week" id="camp-week" min="2025-W18" max="2026-W26" required />
+    <br>
+    <input type="image" id="image" alt="imagen" src="../assets/img/18.jpg" />
+    <br>
+    <br>
+    <input type="submit" id="env" value="Enviar">
+    <input type="reset" id="res" value="Resetear">
 
 
 </body>
