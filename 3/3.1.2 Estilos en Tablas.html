@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2.3.2 Tablas y listas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        caption {
+            background-color: purple;
+            border-radius: 12px;
+            color: white;
+            padding: 2%;
+            margin-bottom: 2%;
+            font-size: 44px font
+        }
+
+
+        th,
+        td {
+            text-align: center;
+            vertical-align: middle;
+            width: 10%;
+            margin: 2%;
+            padding: 2%;
+            border: 5px outset #ccc;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            border-radius: 10px;
+        }
+
+
+        td:first-child {
+            background-color: #2d4e70;
+            color: white;
+            font-weight: bold;
+        }
+
+        .sor {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .sor:hover {
+            background-color: #5510af;
+            cursor: pointer;
+        }
+
+        .serv-red {
+            background-color: #9b59b6;
+            color: white;
+        }
+
+        .serv-red:hover {
+            background-color: #1967cc;
+            cursor: pointer;
+        }
+
+        .ap-web {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .ap-web:hover {
+            background-color: #db7f34;
+            cursor: pointer;
+        }
+
+        .ingles {
+            background-color: #e74c3c;
+            color: white;
+            
+        }
+        .ingles:hover {
+            background-color: #17c49e;
+            cursor: pointer;
+            
+        }
+
+        .python {
+            background-color: #f39c12;
+            color: white;
+        }
+        .python:hover {
+            background-color: #920bd1;
+            cursor: pointer;
+        }
+
+        .seguridad {
+            background-color: #e67e22;
+            color: white;
+        }
+        .seguridad:hover {
+            background-color: #db3208;
+            cursor: pointer;
+        }
+
+        .sostenibilidad {
+            background-color: #1abc9c;
+            color: white;
+        }
+         .sostenibilidad:hover {
+            background-color: #8ab1a9;
+            cursor: pointer;
+        }
+
+        .digitalizacion {
+            background-color: #9dacbb;
+            color: white;
+        }
+        .digitalizacion:hover {
+            background-color: #163553;
+            cursor: pointer;
+        }
+
+        .iti-emple {
+            background-color: #4cbd18;
+            color: white;
+        }
+         .iti-emple:hover {
+            background-color: #1c201a;
+            cursor: pointer;
+        }
+
+        .recreo {
+            background-color: #f1c40f;
+            color: #333;
+            font-weight: bold;
+        }
+        .recreo:hover {
+            background-color: #b118b1;
+            cursor: pointer;
+        }
+        .hueco {
+            background-color: gray;
+            border: none
+        }
+    </style>
+</head>
+
+<body>
+    <u>
+        <h1>HORARIO GM2</h1>
+    </u>
+
+    <table>
+        <caption>HORARIO 2ºSMR 25-26</caption>
+        <thead>
+            <tr>
+                <th class="hueco"></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:30-9:25</td>
+                <td rowspan="2" class="sor">SOR</td>
+                <td class="sor" rowspan="2">SOR</td>
+                <td class="sor" rowspan="2">SOR</td>
+                <td rowspan="2" class="serv-red">Ser red</td>
+                <td class="serv-red">Ser red</td>
+            </tr>
+
+            <tr>
+                <td>9:25-10:20</td>
+
+
+
+                <td class="iti-emple">Iti emple</td>
+            </tr>
+
+            <tr>
+                <td>10:20-11:15</td>
+                <td class="ap-web"><img src="../assets/img/18.jpg" alt="" style="width: 50px;">ap web</td>
+                <td class="ingles">ingles</td>
+                <td class="serv-red">Serv red</td>
+                <td class="python">python</td>
+                <td class="seguridad">Seguridad</td>
+            </tr>
+
+            <tr>
+                <td>11:15-11:40</td>
+                <th class="recreo" colspan="5">RECREO</th>
+            </tr>
+
+            <tr>
+                <td>11:40-12:35</td>
+                <td class="python">python</td>
+                <td class="sostenibilidad">Sostenibilidad</td>
+                <td class="serv-red">Serv red</td>
+                <td class="ap-web"><img src="../assets/img/18.jpg" alt="" style="width: 50px;">ap web</td>
+                <td class="seguridad">Seguridad</td>
+            </tr>
+
+            <tr>
+                <td>12:35-13:30</td>
+                <td class="python">python</td>
+                <td class="serv-red" rowspan="2">Serv red</td>
+                <td class="digitalizacion">Digitalizacion</td>
+                <td class="sor">SOR</td>
+                <td class="ap-web" rowspan="2"><img src="../assets/img/18.jpg" alt="" style="width: 50px;">ap web</td>
+            </tr>
+
+            <tr>
+                <td>13:30-14:35</td>
+                <td class="seguridad">Seguridad</td>
+                <td class="iti-emple">Iti emple</td>
+                <td class="ingles">ingles</td>
+            </tr>
+        </tbody>
+    </table>
+    </ol>
+</body>
+
+</html>
