@@ -1,0 +1,26 @@
+header{
+            background-image: url(https://media.istockphoto.com/id/1702026520/es/foto/fondo-de-pared-de-ladrillo-de-ne%C3%B3n-espacio-vac%C3%ADo-con-textura-grunge-oscura.jpg?s=612x612&w=0&k=20&c=lXdyf_CLcGd3Em6EcRWtqtYTem_YJoNvfOebMcwdTu0=);
+        }
+header img{
+    border-radius: 50%;
+    width: 230px;
+}
+nav ul{
+display: flex;
+list-style: none;
+border-radius: 12px;
+flex-direction: row;
+justify-content: space-around;
+border-bottom: 2px solid color black;
+}
+
+nav ul li a{
+display: flex;
+text-decoration: none;
+background-color: blueviolet;
+color: skyblue;
+border-radius: 15%;
+margin: 10px;
+padding: 10px;
+border: 1px solid black;
+}
