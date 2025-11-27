@@ -5,10 +5,13 @@ header img{
     border-radius: 50%;
     width: 230px;
 }
+body{
+    margin: 0%;
+}
 nav ul{
 display: flex;
 list-style: none;
-border-radius: 12px;
+border-radius: 120px;
 flex-direction: row;
 justify-content: space-around;
 border-bottom: 2px solid color black;
@@ -23,4 +26,36 @@ border-radius: 15%;
 margin: 10px;
 padding: 10px;
 border: 1px solid black;
+}
+
+nav ul li a:hover{
+    background-color: rgb(43, 55, 61);
+    cursor: pointer;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background: #4f256b;
+ color: white;
+ text-align: right;
+ margin-bottom: 0%;
+}
+
+footer {
+    text-align: center;
+  }
+
+a {
+    color: black;
+}
+
+ul>li {
+
+          list-style-type: none;
+}
+
+ul>li:before {
+         content: "►";
+         padding-right: 0.5em;
+         color: #292266;
 }
