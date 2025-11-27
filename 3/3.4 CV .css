@@ -1,49 +1,56 @@
-header{
-            background-image: url(https://media.istockphoto.com/id/1702026520/es/foto/fondo-de-pared-de-ladrillo-de-ne%C3%B3n-espacio-vac%C3%ADo-con-textura-grunge-oscura.jpg?s=612x612&w=0&k=20&c=lXdyf_CLcGd3Em6EcRWtqtYTem_YJoNvfOebMcwdTu0=);
-        }
-header img{
+header {
+    background-image: url(https://media.istockphoto.com/id/1702026520/es/foto/fondo-de-pared-de-ladrillo-de-ne%C3%B3n-espacio-vac%C3%ADo-con-textura-grunge-oscura.jpg?s=612x612&w=0&k=20&c=lXdyf_CLcGd3Em6EcRWtqtYTem_YJoNvfOebMcwdTu0=);
+    background-size: cover;
+
+
+
+}
+
+header img {
     border-radius: 50%;
     width: 230px;
 }
-body{
+
+body {
     margin: 0%;
 }
-nav ul{
-display: flex;
-list-style: none;
-border-radius: 120px;
-flex-direction: row;
-justify-content: space-around;
-border-bottom: 2px solid color black;
+
+nav ul {
+    display: flex;
+    list-style: none;
+    border-radius: 120px;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid color black;
 }
 
-nav ul li a{
-display: flex;
-text-decoration: none;
-background-color: blueviolet;
-color: skyblue;
-border-radius: 15%;
-margin: 10px;
-padding: 10px;
-border: 1px solid black;
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    background-color: blueviolet;
+    color: skyblue;
+    border-radius: 15%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: rgb(43, 55, 61);
     cursor: pointer;
 }
 
 footer {
- padding: 1em 1.5em;
- background: #4f256b;
- color: white;
- text-align: right;
- margin-bottom: 0%;
+    padding: 1em 1.5em;
+    background: #4f256b;
+    color: white;
+    text-align: right;
+    margin-bottom: 0%;
 }
 
 footer {
     text-align: center;
-  }
+}
 
 a {
     color: black;
@@ -51,11 +58,48 @@ a {
 
 ul>li {
 
-          list-style-type: none;
+    list-style-type: none;
 }
 
 ul>li:before {
-         content: "►";
-         padding-right: 0.5em;
-         color: #292266;
+    content: "►";
+    padding-right: 0.5em;
+    color: #292266;
+}
+
+.Conocimientos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px rgb(95, 50, 50);
+    grid-template-areas: 
+    "conb cona"
+    "lang lang";
+}
+
+.languages{
+    grid-area: lang;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+.languages ul>li:before {
+    content: "*";
+    padding-right: 0.5em;
+    color: #292266;
+}
+
+h3>li {
+     list-style-type: none;
+     }
+.skills h3>li:before {
+    content: "*";
+    padding-right: 0.5em;
+    color: #292266;
+}
+.Conocimientos ul>li::before{
+    content: "-";
+    padding-right: 0.5em;
+    color: #292266;
 }
